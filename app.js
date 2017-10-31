@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', ['ngMessages']);
 
-myApp.controller('mainController', function($scope){
+myApp.controller('mainController', ['$scope', '$log', function($scope, $log){
     
     $scope.name = 'Jacob';
     $scope.occupation = 'Programmer';
@@ -12,4 +12,4 @@ myApp.controller('mainController', function($scope){
     $scope.getName();
     console.log($scope);
 
-});
+}]);
